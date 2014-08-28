@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AF4EC5319AF31E700150F5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF4EC5219AF31E700150F5C /* Foundation.framework */; };
+		4AF4EC5519AF31E700150F5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF4EC5419AF31E700150F5C /* CoreGraphics.framework */; };
+		4AF4EC5719AF31E700150F5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF4EC5619AF31E700150F5C /* UIKit.framework */; };
+		4AF4EC5D19AF31E700150F5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AF4EC5B19AF31E700150F5C /* InfoPlist.strings */; };
+		4AF4EC5F19AF31E700150F5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF4EC5E19AF31E700150F5C /* main.m */; };
+		4AF4EC6319AF31E700150F5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF4EC6219AF31E700150F5C /* AppDelegate.m */; };
+		4AF4EC6619AF31E700150F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF4EC6419AF31E700150F5C /* Main.storyboard */; };
+		4AF4EC6919AF31E700150F5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF4EC6819AF31E700150F5C /* ViewController.m */; };
+		4AF4EC6B19AF31E700150F5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF4EC6A19AF31E700150F5C /* Images.xcassets */; };
+		4AF4EC7219AF31E700150F5C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF4EC7119AF31E700150F5C /* XCTest.framework */; };
+		4AF4EC7319AF31E700150F5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF4EC5219AF31E700150F5C /* Foundation.framework */; };
+		4AF4EC7419AF31E700150F5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF4EC5619AF31E700150F5C /* UIKit.framework */; };
+		4AF4EC7C19AF31E700150F5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AF4EC7A19AF31E700150F5C /* InfoPlist.strings */; };
+		4AF4EC7E19AF31E700150F5C /* MJPCheckMarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF4EC7D19AF31E700150F5C /* MJPCheckMarkTests.m */; };
+		4AF4EC9019AF3DDE00150F5C /* MJPCheckMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF4EC8F19AF3DDE00150F5C /* MJPCheckMark.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AF4EC7519AF31E700150F5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AF4EC4719AF31E700150F5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AF4EC4E19AF31E700150F5C;
+			remoteInfo = MJPCheckMark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AF4EC4F19AF31E700150F5C /* MJPCheckMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJPCheckMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF4EC5219AF31E700150F5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4AF4EC5419AF31E700150F5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4AF4EC5619AF31E700150F5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4AF4EC5A19AF31E700150F5C /* MJPCheckMark-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MJPCheckMark-Info.plist"; sourceTree = "<group>"; };
+		4AF4EC5C19AF31E700150F5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4AF4EC5E19AF31E700150F5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AF4EC6019AF31E700150F5C /* MJPCheckMark-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJPCheckMark-Prefix.pch"; sourceTree = "<group>"; };
+		4AF4EC6119AF31E700150F5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AF4EC6219AF31E700150F5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AF4EC6519AF31E700150F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AF4EC6719AF31E700150F5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AF4EC6819AF31E700150F5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AF4EC6A19AF31E700150F5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4AF4EC7019AF31E700150F5C /* MJPCheckMarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJPCheckMarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF4EC7119AF31E700150F5C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4AF4EC7919AF31E700150F5C /* MJPCheckMarkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MJPCheckMarkTests-Info.plist"; sourceTree = "<group>"; };
+		4AF4EC7B19AF31E700150F5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4AF4EC7D19AF31E700150F5C /* MJPCheckMarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPCheckMarkTests.m; sourceTree = "<group>"; };
+		4AF4EC8E19AF3DDE00150F5C /* MJPCheckMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJPCheckMark.h; path = Source/MJPCheckMark.h; sourceTree = SOURCE_ROOT; };
+		4AF4EC8F19AF3DDE00150F5C /* MJPCheckMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJPCheckMark.m; path = Source/MJPCheckMark.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AF4EC4C19AF31E700150F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF4EC5519AF31E700150F5C /* CoreGraphics.framework in Frameworks */,
+				4AF4EC5719AF31E700150F5C /* UIKit.framework in Frameworks */,
+				4AF4EC5319AF31E700150F5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF4EC6D19AF31E700150F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF4EC7219AF31E700150F5C /* XCTest.framework in Frameworks */,
+				4AF4EC7419AF31E700150F5C /* UIKit.framework in Frameworks */,
+				4AF4EC7319AF31E700150F5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AF4EC4619AF31E700150F5C = {
+			isa = PBXGroup;
+			children = (
+				4AF4EC5819AF31E700150F5C /* MJPCheckMark */,
+				4AF4EC7719AF31E700150F5C /* MJPCheckMarkTests */,
+				4AF4EC5119AF31E700150F5C /* Frameworks */,
+				4AF4EC5019AF31E700150F5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AF4EC5019AF31E700150F5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AF4EC4F19AF31E700150F5C /* MJPCheckMark.app */,
+				4AF4EC7019AF31E700150F5C /* MJPCheckMarkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AF4EC5119AF31E700150F5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AF4EC5219AF31E700150F5C /* Foundation.framework */,
+				4AF4EC5419AF31E700150F5C /* CoreGraphics.framework */,
+				4AF4EC5619AF31E700150F5C /* UIKit.framework */,
+				4AF4EC7119AF31E700150F5C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AF4EC5819AF31E700150F5C /* MJPCheckMark */ = {
+			isa = PBXGroup;
+			children = (
+				4AF4EC6119AF31E700150F5C /* AppDelegate.h */,
+				4AF4EC6219AF31E700150F5C /* AppDelegate.m */,
+				4AF4EC6419AF31E700150F5C /* Main.storyboard */,
+				4AF4EC6719AF31E700150F5C /* ViewController.h */,
+				4AF4EC6819AF31E700150F5C /* ViewController.m */,
+				4AF4EC8A19AF324200150F5C /* CheckMark */,
+				4AF4EC6A19AF31E700150F5C /* Images.xcassets */,
+				4AF4EC5919AF31E700150F5C /* Supporting Files */,
+			);
+			path = MJPCheckMark;
+			sourceTree = "<group>";
+		};
+		4AF4EC5919AF31E700150F5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AF4EC5A19AF31E700150F5C /* MJPCheckMark-Info.plist */,
+				4AF4EC5B19AF31E700150F5C /* InfoPlist.strings */,
+				4AF4EC5E19AF31E700150F5C /* main.m */,
+				4AF4EC6019AF31E700150F5C /* MJPCheckMark-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AF4EC7719AF31E700150F5C /* MJPCheckMarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AF4EC7D19AF31E700150F5C /* MJPCheckMarkTests.m */,
+				4AF4EC7819AF31E700150F5C /* Supporting Files */,
+			);
+			path = MJPCheckMarkTests;
+			sourceTree = "<group>";
+		};
+		4AF4EC7819AF31E700150F5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AF4EC7919AF31E700150F5C /* MJPCheckMarkTests-Info.plist */,
+				4AF4EC7A19AF31E700150F5C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AF4EC8A19AF324200150F5C /* CheckMark */ = {
+			isa = PBXGroup;
+			children = (
+				4AF4EC8E19AF3DDE00150F5C /* MJPCheckMark.h */,
+				4AF4EC8F19AF3DDE00150F5C /* MJPCheckMark.m */,
+			);
+			name = CheckMark;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AF4EC4E19AF31E700150F5C /* MJPCheckMark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF4EC8119AF31E700150F5C /* Build configuration list for PBXNativeTarget "MJPCheckMark" */;
+			buildPhases = (
+				4AF4EC4B19AF31E700150F5C /* Sources */,
+				4AF4EC4C19AF31E700150F5C /* Frameworks */,
+				4AF4EC4D19AF31E700150F5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJPCheckMark;
+			productName = MJPCheckMark;
+			productReference = 4AF4EC4F19AF31E700150F5C /* MJPCheckMark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AF4EC6F19AF31E700150F5C /* MJPCheckMarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF4EC8419AF31E700150F5C /* Build configuration list for PBXNativeTarget "MJPCheckMarkTests" */;
+			buildPhases = (
+				4AF4EC6C19AF31E700150F5C /* Sources */,
+				4AF4EC6D19AF31E700150F5C /* Frameworks */,
+				4AF4EC6E19AF31E700150F5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AF4EC7619AF31E700150F5C /* PBXTargetDependency */,
+			);
+			name = MJPCheckMarkTests;
+			productName = MJPCheckMarkTests;
+			productReference = 4AF4EC7019AF31E700150F5C /* MJPCheckMarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AF4EC4719AF31E700150F5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = RABFAP;
+				TargetAttributes = {
+					4AF4EC6F19AF31E700150F5C = {
+						TestTargetID = 4AF4EC4E19AF31E700150F5C;
+					};
+				};
+			};
+			buildConfigurationList = 4AF4EC4A19AF31E700150F5C /* Build configuration list for PBXProject "MJPCheckMark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AF4EC4619AF31E700150F5C;
+			productRefGroup = 4AF4EC5019AF31E700150F5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AF4EC4E19AF31E700150F5C /* MJPCheckMark */,
+				4AF4EC6F19AF31E700150F5C /* MJPCheckMarkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AF4EC4D19AF31E700150F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF4EC6B19AF31E700150F5C /* Images.xcassets in Resources */,
+				4AF4EC5D19AF31E700150F5C /* InfoPlist.strings in Resources */,
+				4AF4EC6619AF31E700150F5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF4EC6E19AF31E700150F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF4EC7C19AF31E700150F5C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AF4EC4B19AF31E700150F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF4EC6919AF31E700150F5C /* ViewController.m in Sources */,
+				4AF4EC9019AF3DDE00150F5C /* MJPCheckMark.m in Sources */,
+				4AF4EC6319AF31E700150F5C /* AppDelegate.m in Sources */,
+				4AF4EC5F19AF31E700150F5C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF4EC6C19AF31E700150F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF4EC7E19AF31E700150F5C /* MJPCheckMarkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AF4EC7619AF31E700150F5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AF4EC4E19AF31E700150F5C /* MJPCheckMark */;
+			targetProxy = 4AF4EC7519AF31E700150F5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AF4EC5B19AF31E700150F5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AF4EC5C19AF31E700150F5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4AF4EC6419AF31E700150F5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AF4EC6519AF31E700150F5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AF4EC7A19AF31E700150F5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AF4EC7B19AF31E700150F5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AF4EC7F19AF31E700150F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AF4EC8019AF31E700150F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AF4EC8219AF31E700150F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJPCheckMark/MJPCheckMark-Prefix.pch";
+				INFOPLIST_FILE = "MJPCheckMark/MJPCheckMark-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4AF4EC8319AF31E700150F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJPCheckMark/MJPCheckMark-Prefix.pch";
+				INFOPLIST_FILE = "MJPCheckMark/MJPCheckMark-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4AF4EC8519AF31E700150F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MJPCheckMark.app/MJPCheckMark";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJPCheckMark/MJPCheckMark-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MJPCheckMarkTests/MJPCheckMarkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4AF4EC8619AF31E700150F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MJPCheckMark.app/MJPCheckMark";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJPCheckMark/MJPCheckMark-Prefix.pch";
+				INFOPLIST_FILE = "MJPCheckMarkTests/MJPCheckMarkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AF4EC4A19AF31E700150F5C /* Build configuration list for PBXProject "MJPCheckMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF4EC7F19AF31E700150F5C /* Debug */,
+				4AF4EC8019AF31E700150F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF4EC8119AF31E700150F5C /* Build configuration list for PBXNativeTarget "MJPCheckMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF4EC8219AF31E700150F5C /* Debug */,
+				4AF4EC8319AF31E700150F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF4EC8419AF31E700150F5C /* Build configuration list for PBXNativeTarget "MJPCheckMarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF4EC8519AF31E700150F5C /* Debug */,
+				4AF4EC8619AF31E700150F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AF4EC4719AF31E700150F5C /* Project object */;
+}
