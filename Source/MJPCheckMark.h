@@ -14,7 +14,11 @@
 
 @property (nonatomic, assign) IBOutlet id<MJPCheckMarkDelegate> delegate;
 @property (nonatomic, assign) CGFloat borderWidth;
+@property (nonatomic, assign) CGFloat gapWidth;
 @property (nonatomic, readonly) BOOL isOn;
+@property (nonatomic, assign) CGFloat animationDuration;
+
+- (void)setCheckMarkOn:(BOOL)on animated:(BOOL)animated;
 
 @end
 

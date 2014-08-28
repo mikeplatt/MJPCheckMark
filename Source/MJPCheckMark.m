@@ -21,6 +21,8 @@
 @implementation MJPCheckMark
 
 @synthesize borderWidth = _borderWidth;
+@synthesize gapWidth = _gapWidth;
+@synthesize animationDuration = _animationDuration;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -40,7 +42,8 @@
 - (void)commonInit
 {
     self.borderWidth = 2.0;
-    _on = YES;
+    self.gapWidth = 2.0;
+    self.animationDuration = 0.3;
     
     CGFloat width = self.frame.size.width;
     if(width < 50.0) {
@@ -60,6 +63,8 @@
     _check = [[UIView alloc] init];
     [self frameForCheck];
     _check.backgroundColor = self.tintColor;
+    _check.alpha = 0.0;
+    _check.transform = CGAffineTransformMakeScale(0.1, 0.1);
     [self addSubview:_check];
     
     _tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchCheckMark:)];
@@ -70,35 +75,50 @@
 
 - (void)frameForCheck
 {
-    CGFloat width = self.bounds.size.width - (4 * self.borderWidth);
+    CGFloat currentScale = _check.transform.a;
+    _check.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    CGFloat width = self.bounds.size.width - (2 * self.borderWidth) - (2 * self.gapWidth);
     CGFloat offSet = (self.frame.size.width - width) / 2;
     _check.frame = CGRectMake(offSet, offSet, width, width);
     _check.layer.cornerRadius = _check.frame.size.width / 2;
+    _check.transform = CGAffineTransformMakeScale(currentScale, currentScale);
 }
 
 - (void)switchCheckMark:(UITapGestureRecognizer *)gesture
 {
-    _on = !_on;
-    
-    [self.delegate checkMarkValueChanged:self];
-    
-    CGFloat alpha = (_on) ? 1.0 : 0.0;
-    CGFloat scale = (_on) ? 1.0 : 0.1;
-
-    [UIView animateWithDuration:0.3
-                          delay:0.0
-         usingSpringWithDamping:0.8
-          initialSpringVelocity:0.0
-                        options:UIViewAnimationOptionCurveEaseOut
-                     animations:^{
-                         _check.alpha = alpha;
-                         _check.transform = CGAffineTransformMakeScale(scale, scale);
-                     } completion:nil];
+    [self setCheckMarkOn:!_on animated:YES];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
     return CGRectContainsPoint(_hitFrame, point);
+}
+
+#pragma mark - Public
+
+- (void)setCheckMarkOn:(BOOL)on animated:(BOOL)animated
+{
+    _on = on;
+    
+    [self.delegate checkMarkValueChanged:self];
+    
+    CGFloat alpha = (_on) ? 1.0 : 0.0;
+    CGFloat scale = (_on) ? 1.0 : 0.1;
+    
+    if(animated) {
+        [UIView animateWithDuration:self.animationDuration
+                              delay:0.0
+             usingSpringWithDamping:0.6
+              initialSpringVelocity:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             _check.alpha = alpha;
+                             _check.transform = CGAffineTransformMakeScale(scale, scale);
+                         } completion:nil];
+    } else {
+        _check.alpha = alpha;
+        _check.transform = CGAffineTransformMakeScale(scale, scale);
+    }
 }
 
 #pragma mark - Getters
@@ -114,6 +134,12 @@
 {
     _borderWidth = borderWidth;
     _border.layer.borderWidth = borderWidth;
+    [self frameForCheck];
+}
+
+- (void)setGapWidth:(CGFloat)gapWidth
+{
+    _gapWidth = gapWidth;
     [self frameForCheck];
 }
 

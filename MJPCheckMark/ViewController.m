@@ -18,6 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.checkMark.tintColor = [UIColor redColor];
+    self.checkMark.borderWidth = 4.0;
+    self.checkMark.gapWidth = 2.0;
 }
 
 - (void)didReceiveMemoryWarning
