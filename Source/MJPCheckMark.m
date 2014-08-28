@@ -80,6 +80,8 @@
 {
     _on = !_on;
     
+    [self.delegate checkMarkValueChanged:self];
+    
     CGFloat alpha = (_on) ? 1.0 : 0.0;
     CGFloat scale = (_on) ? 1.0 : 0.1;
 
@@ -91,9 +93,7 @@
                      animations:^{
                          _check.alpha = alpha;
                          _check.transform = CGAffineTransformMakeScale(scale, scale);
-                     } completion:^(BOOL finished) {
-                         [self.delegate checkMarkValueChanged:self];
-                     }];
+                     } completion:nil];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
