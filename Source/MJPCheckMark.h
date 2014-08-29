@@ -19,6 +19,7 @@
 @property (nonatomic, assign) CGFloat animationDuration;
 
 - (void)setCheckMarkOn:(BOOL)on animated:(BOOL)animated;
+- (void)setCheckMarkHalfWay:(BOOL)animated;
 
 @end
 

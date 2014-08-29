@@ -134,6 +134,26 @@
     }
 }
 
+- (void)setCheckMarkHalfWay:(BOOL)animated
+{
+    _on = NO;
+    
+    if(animated) {
+        [UIView animateWithDuration:self.animationDuration
+                              delay:0.0
+             usingSpringWithDamping:0.6
+              initialSpringVelocity:0.0
+                            options:UIViewAnimationOptionCurveEaseOut
+                         animations:^{
+                             _check.alpha = 0.5;
+                             _check.transform = CGAffineTransformMakeScale(0.75, 0.75);
+                         } completion:nil];
+    } else {
+        _check.alpha = 0.5;
+        _check.transform = CGAffineTransformMakeScale(0.75, 0.75);
+    }
+}
+
 #pragma mark - Getters
 
 - (BOOL)isOn

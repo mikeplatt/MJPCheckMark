@@ -22,7 +22,8 @@
     self.checkMark.tintColor = [UIColor redColor];
     self.checkMark.borderWidth = 4.0;
     self.checkMark.gapWidth = 2.0;
-    [self.checkMark setCheckMarkOn:YES animated:NO];
+    //[self.checkMark setCheckMarkOn:YES animated:NO];
+    [self.checkMark setCheckMarkHalfWay:NO];
 }
 
 - (void)didReceiveMemoryWarning
