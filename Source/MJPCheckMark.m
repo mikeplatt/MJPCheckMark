@@ -86,7 +86,22 @@
 
 - (void)switchCheckMark:(UITapGestureRecognizer *)gesture
 {
-    [self setCheckMarkOn:!_on animated:YES];
+    _on = !_on;
+    
+    [self.delegate checkMarkValueChanged:self];
+    
+    CGFloat alpha = (_on) ? 1.0 : 0.0;
+    CGFloat scale = (_on) ? 1.0 : 0.1;
+    
+    [UIView animateWithDuration:self.animationDuration
+                          delay:0.0
+         usingSpringWithDamping:0.6
+          initialSpringVelocity:0.0
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         _check.alpha = alpha;
+                         _check.transform = CGAffineTransformMakeScale(scale, scale);
+                     } completion:nil];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
@@ -99,8 +114,6 @@
 - (void)setCheckMarkOn:(BOOL)on animated:(BOOL)animated
 {
     _on = on;
-    
-    [self.delegate checkMarkValueChanged:self];
     
     CGFloat alpha = (_on) ? 1.0 : 0.0;
     CGFloat scale = (_on) ? 1.0 : 0.1;
