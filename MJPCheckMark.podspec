@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name              = 'MJPCheckMark'
-    s.version           = '0.0.3'
+    s.version           = '0.0.4'
     s.summary           = 'iOS Checkmark'
     s.homepage          = 'https://github.com/mikeplatt/MJPCheckMark'
     s.license           = {
